@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DripWear</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="img/drip.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+</head>
+<body style="opacity: 0; transition: 3s;">
+  <main class="band">
+    <figure >
+    	   <img src="img/logo.png">
+        <figcaption id="element"></figcaption>
+    </figure>
+  </main>
+
+<script>
+  $(document).ready(function() {    
+    $("body").css("opacity", "1");
+  });
+
+
+  $('#element').typeIt({
+     strings: 'a look at style, through the prism of the future.',
+     speed: 120,
+     autoStart: true// options
+});
+	</script>
+</body>
+</html>
