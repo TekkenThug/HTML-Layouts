@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 57 62" style="enable-background:new 0 0 57 62;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#010202;}
+	.st1{opacity:0.764;fill:#FFFFFF;enable-background:new    ;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#1C1C1C;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{fill:#00998E;}
+	.st6{fill:#1D1E1B;}
+	.st7{fill:#FFFFFF;}
+	.st8{fill:#009A8F;}
+</style>
+<rect id="Rechteck_17" class="st1" width="57" height="62"/>
+<g id="Gruppe_33" transform="translate(4 3)">
+	<g>
+		<defs>
+			<rect id="SVGID_1_" y="0" width="48.5" height="55.5"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Gruppe_14" transform="translate(0 0.002)" class="st2">
+			<g id="Gruppe_13" transform="translate(3.436 3.962)">
+				<path id="Pfad_43" class="st3" d="M16,0v10.9h4.4c3.8-0.1,5.8-1.9,5.8-5.5s-2-5.4-5.8-5.5H16z M0,0v10.9h5.3
+					c4.1,0,4.5-2.1,4.5-3.1c0-1.5-1.2-2.6-2.7-2.7v0C8.4,5,9.3,3.9,9.4,2.7c0-2-1.9-2.7-4-2.7H0z M32.3,0v10.9h5.3
+					c4.1,0,4.5-2.1,4.5-3.1c0-1.5-1.2-2.6-2.7-2.7v0c1.2-0.2,2.1-1.2,2.2-2.4c0-2-1.9-2.7-4-2.7H32.3z M1.2,0.9h4.1
+					c1.9,0,2.8,0.7,2.8,2.1c0,1-0.9,1.9-2.8,1.9H1.2V0.9z M17.2,0.9h2.6c3.6,0,5.2,1.3,5.2,4.6s-1.6,4.6-5.2,4.6h-2.6V0.9z
+					 M33.5,0.9h4.1c1.9,0,2.8,0.7,2.8,2.1c0,1-0.9,1.9-2.8,1.9h-4.1L33.5,0.9z M1.2,5.7h4.1c2.1,0,3.3,0.7,3.3,2.1
+					c0,1.7-1.5,2.3-3.3,2.2H1.2V5.7z M33.5,5.7h4.1c2.1,0,3.3,0.7,3.3,2.1c0,1.7-1.5,2.3-3.3,2.2h-4.1L33.5,5.7z"/>
+			</g>
+		</g>
+	</g>
+	<path id="Pfad_45" class="st3" d="M0,55.5h48.5V0H0V55.5z M1,1h46.5v53.5H1V1z"/>
+	<g>
+		<defs>
+			<rect id="SVGID_3_" y="0" width="48.5" height="55.5"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Gruppe_16" transform="translate(0 0.002)" class="st4">
+			<g id="Gruppe_15" transform="translate(3.426 16.104)">
+				<path id="Pfad_46" class="st5" d="M40.6,17.3c-10.3,0.4-17.7,11.3-19.7,16.9c-2-5.6-9.4-16.5-19.7-16.9V1.1
+					c13.4,0.6,19.3,22.1,19.3,25.6h1c0-3.4,5.8-25,19.3-25.6L40.6,17.3z M41.1,0C28.9,0,22.6,15.5,20.8,23.1l0,0
+					C19,15.5,12.7,0,0.5,0H0v18.3h0.5c11.8,0,19.8,15.2,19.8,18.3h1c0-3.2,8-18.3,19.8-18.3h0.5V0L41.1,0z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Otamendi';
+  src: url('../fonts/Otamendi.otf');
+  src: url('../fonts/Otamendi.ttf') format('truetype'),
+     url('../fonts/Otamendi.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Nuvo";
+  src: url('../fonts/NuvoWebRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Droid";
+  src: url('../fonts/DroidSerif-Regular.ttf') format('truetype');
+}
+
+%droid-normal {
+  font-family: "Droid", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%nuvo-normal {
+  font-family: "Nuvo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+%otamendi-normal {
+  font-family: Otamendi, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
