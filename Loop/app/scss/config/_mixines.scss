@@ -1,0 +1,8 @@
+@mixin trans($duration: 0.2s) {
+    transition: all $duration ease;
+}
+
+@mixin ls($ed, $fz) {
+    $ed: ($ed * 1000) * $fz / 1000;
+    letter-spacing: #{$ed}px; 
+}

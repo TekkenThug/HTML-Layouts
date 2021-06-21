@@ -1,0 +1,106 @@
+.card {
+  display: block;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(85, 85, 85, 0.05);
+  border-radius: 4px;
+  width: 280px;
+  height: 392px;
+  padding: 10px 15px 20px 10px;
+  position: relative;
+  @include trans();
+  &:hover {
+    box-shadow: 0px 10px 25px rgba(85, 85, 85, 0.2);
+  }
+  &__labels {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+  }
+  &__label {
+    padding: 4px 6px;
+    border-radius: 2px;
+    &.new {
+      background-color: #9e00ff;
+    }
+    &.hit {
+      background-color: #ff0000;
+    }
+    & + & {
+      margin-left: 5px;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 270px;
+    text-align: center;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 20px; /* fallback */
+    max-height: 40px;
+  }
+  &__price {
+    position: absolute;
+    font-weight: 600;
+    font-size: 14px;
+    left: 20px;
+    bottom: 25px;
+  }
+  &__add {
+    color: $main1;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 5px 5px 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    outline: none;
+    @include trans();
+    * {
+      @include trans();
+    }
+    .cart-icon {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 14px;
+      height: 14px;
+    }
+    &:hover {
+      background: rgba(2, 120, 174, 0.1);
+      border-radius: 2px;
+    }
+    &:active {
+      background-color: $main1Hover;
+      outline: none;
+      color: $white;
+      .cart-icon svg path {
+        fill: $white;
+      }
+    }
+  }
+}

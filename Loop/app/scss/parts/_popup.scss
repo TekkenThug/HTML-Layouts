@@ -1,0 +1,85 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 420px;
+  padding: 20px;
+  width: 100%;
+  .mfp-close {
+    background-image: url("../images/icons/close.svg");
+    @include trans();
+    font-size: 0;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+  }
+  &__wrapper {
+    border-radius: 10px;
+    background-color: $white;
+    padding: 40px 25px;
+  }
+  &__smile {
+    text-align: center;
+  }
+  &__title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 250px;
+    margin: 0 auto 10px;
+  }
+  p {
+    text-align: center;
+    max-width: 270px;
+    margin: 0 auto 25px;
+    .number-order {
+      color: $main1;
+    }
+  }
+  &__order {
+    padding: 16px 32px;
+    font-weight: 600;
+    text-align: center;
+    color: $white;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    background: linear-gradient(87.22deg, #0278ae 0%, #02cac6 100%);
+    box-shadow: 0px 4px 8px rgba(2, 120, 174, 0.3);
+    border-radius: 4px;
+  }
+  &__continue {
+    max-width: 230px;
+    text-align: center;
+    display: block;
+    padding: 16px 32px;
+    color: $white;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(87.22deg, #0278ae 0%, #02cac6 100%);
+    box-shadow: 0px 4px 8px rgba(2, 120, 174, 0.3);
+    border-radius: 4px;
+  }
+  .close {
+    padding: 16px 32px;
+    color: $main1;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    border: none;
+    background: rgba(2, 120, 174, 0.1);
+    border-radius: 4px;
+  }
+}

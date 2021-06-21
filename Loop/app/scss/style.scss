@@ -1,0 +1,22 @@
+/* Служебные стили */
+@import "config/variables";
+@import "config/fonts";
+@import "config/mixines";
+@import "config/global";
+
+@import "parts/header";           // Шапка
+@import "parts/crumbs";           // Крошки
+@import "parts/card";             // Карточка товара
+@import "parts/showcase";         // Слайдер витрины
+@import "parts/popup";            // Поп-апы
+
+/* Страницы */
+@import "pages/main";             // Главная страница
+@import "pages/catalog";          // Каталог
+@import "pages/item";             // Товар
+@import "pages/cart";             // Корзина
+@import "pages/contacts";         // Контакты
+@import "pages/delivery-policy";  // Доставка и политика
+
+
+@import "parts/footer";           // Подвал
