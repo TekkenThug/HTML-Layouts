@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+h2 a img{
+    border: 3px solid #ddd;
+    border-radius: 4px;
+    margin:30px; 
+    width: 160px;
+    height: 270px; 
+}
+h2 a img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+body{
+	background: url(../img/pudge.jpg);
+	background-size: auto;
+	color:purple;
+	font-family: Comfortaa;
+	text-shadow: white 1px 1px 0, white -1px -1px 0, 
+                 white -1px 1px 0, white 1px -1px 0;
+  }
+.back{
+	width: 40px;
+}
+
+.images{
+	text-align: center;
+}
+h1{
+	text-align:center;
+	margin-top: 3%;
+	font-size: 60px;
+	text-shadow: white 1px 1px 1px, white -1px -1px 2px, 
+                 white -1px 1px 2px, white 1px -1px 2px;
+}
+h2{
+	font-size:18px;
+	text-align: center;
+}
+.lb-caption{
+	text-decoration: none;
+	color: green;
+}
+div.myself{
+	width: 60%;
+	text-align:center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.contacts a{
+	text-decoration: none;
+}
+footer img{
+	width: 30px;
+	margin:8px;
+}
+footer{
+	text-align: center;
+}
