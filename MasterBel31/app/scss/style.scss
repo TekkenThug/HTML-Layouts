@@ -1,0 +1,288 @@
+@import "libs";
+@import "variables";
+@import "extras";
+@import "global";
+
+.header {
+  background-image: url("../img/bg/header-bg.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  &__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    text-align: right;
+    padding: 20px 80px 20px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 560px;
+    position: relative;
+    padding-bottom: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 80px;
+      width: 40px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+  &__phone {
+    padding: 15px 0 15px 25px;
+    position: relative;
+    @include trans();
+    &:hover {
+      color: $orange;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("../img/icons/phone.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.advance {
+  background-image: url("../img/bg/advance-bg.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  &__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    text-align: left;
+    padding: 20px 10px 20px 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 560px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    path {
+      @include trans();
+      fill: #fff;
+    }
+  }
+  &__item {
+    margin: 0 20px 20px 0px;
+    border: 2px solid $orange;
+    border-radius: 8px;
+    padding: 10px 15px;
+    flex: 0 1 280px;
+    text-align: center;
+    font-weight: 600;
+    @include trans(0.35s);
+    &:hover {
+      cursor: default;
+      background-color: $orange;
+      color: #000;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      path {
+        fill: #000;
+      }
+    }
+  }
+  &__photo {
+    padding-top: 60px;
+  }
+}
+
+.price {
+  background-color: #fff;
+  background-image: url("../img/bg/price-bg.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: $blue;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 40px 60px;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__services-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  &__services-logo {
+    path {
+      fill: $blue;
+      @include trans(0.35s);
+    }
+  }
+  &__services-item {
+    text-align: center;
+    flex: 0 1 320px;
+    border: 2px solid $blue;
+    border-radius: 8px;
+    padding: 20px 15px;
+    margin: 0 10px 10px;
+    @include trans(0.35s);
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+      cursor: default;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &__info {
+    text-align: center;
+    .advance__title {
+      text-align: right;
+    }
+  }
+  &__progress {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  &__progress-item {
+    flex: 1 1 420px;
+    padding: 0 30px;
+    position: relative;
+    & + & {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 120px;
+        background-color: $blue;
+      }
+    }
+    .warning {
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+  &__progress-icon {
+    margin-bottom: 10px;
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+    path {
+      fill: $blue;
+    }
+  }
+}
+
+.feedback {
+  background-color: #fff;
+  color: $blue;
+  background-image: url("../img/bg/advance-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    padding: 40px;
+  }
+  &__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 560px;
+  }
+  &__form-wrapper {
+    flex: 0 1 50%;
+  }
+  &__form {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: $blue;
+    padding: 40px 40px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  &__field {
+    display: block;
+    border-radius: 5px;
+    padding: 10px 18px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+    font-weight: 500;
+    border: 2px solid transparent;
+    @include trans(0.35s);
+    &:focus {
+      border-color: $orange;
+    }
+  }
+  &__submit {
+    margin: 30px 0;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 17px 24px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    @include trans();
+    &:hover {
+      background-color: $orange;
+      color: #000;
+      border-color: transparent;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+}
+
+@import "media";
+
+

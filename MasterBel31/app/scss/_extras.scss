@@ -1,0 +1,10 @@
+/* Mixines */
+@mixin Font($weight) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin trans($duration: 0.2s) {
+  transition: all $duration ease;
+}
+

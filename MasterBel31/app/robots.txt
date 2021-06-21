@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /php/db.php
+Sitemap: https://masterbel31.ru/sitemap.xml

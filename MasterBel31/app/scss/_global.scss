@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  @include Font(400);
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  background-color: $blue;
+}
+
+header,
+section {
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-title {
+  font-size: 78px;
+  line-height: 84px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section-photo {
+  height: 100vh;
+  img {
+    height: 100%;
+  }
+}
+
+.section-logo {
+  margin-bottom: 80px;
+  img {
+    width: 120px;
+  }
+}
+
+.to-form {
+  display: inline-block;
+  border: 2px solid $orange;
+  border-radius: 8px;
+  padding: 10px 18px;
+  max-width: 320px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  @include trans();
+  &:hover {
+    transform: translate(-10px, -10px);
+    background-color: $orange;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  &.right {
+    &:hover {
+      transform: translate(10px, -10px);
+    }
+  }
+  &.center {
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: $orange;
+}
+
+.modal-msg-form {
+  display: none;
+  position: fixed;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 360px;
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue;
+  z-index: 100000;
+  text-align: center;
+  .content {
+    transform: translateY(50%);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+.modal-shadow {
+  display: none;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.75);
+  }
+}
+
+#preloader {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($blue, .95);
+  border-radius: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/icons/wrench.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: rotating 1s linear infinite both;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
