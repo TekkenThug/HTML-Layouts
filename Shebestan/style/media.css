@@ -1,0 +1,100 @@
+@media (max-width: 820px) {
+    .form_footer input[type=submit] {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .header__wrapper {
+        display: block;
+    }
+    .contacts {
+        padding: 0;
+    }
+    .logo_header {
+        text-align: center;
+        margin-top: 10px;
+        padding: 0;
+    }
+    .table_location td {
+        font-size: 16px;
+    }
+    .paragraph_container p {
+        font-size: 16px;
+        font-family: "Roboto Condensed", sans-serif;
+        line-height: 33px;
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+    }
+    .paragraph_container strong {
+        font-size: 22px;
+    }
+    .main_heading {
+        font-size: 30px;
+        padding: 0px 24px;
+    }
+}
+@media (max-width: 604px) {
+    .form_footer input[name=phone_footer] {
+        width: auto;
+    }
+    .table_location td {
+        font-size: 16px;
+        padding: 2px 25px;
+    }
+}
+@media (max-width: 500px) {
+    .slider__item {
+        min-height: 400px;
+    }
+    .navigation_list li {
+        padding: 0px 10px;
+        font-size: 16px;
+    }
+    .contacts .contact_list_header:first-child {
+        margin-left: auto;
+    }
+    .contacts {
+        padding-top: 15px;
+    }
+    .contacts .contact_list_header {
+       display: block;
+       margin-top: 0;
+       margin: 0 auto 15px;
+    }
+    .contacts .vertical_line {
+        display: none;
+    }
+    .container_footer {
+        display: block;
+    }
+    .navigation_footer {
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .feedback {
+        padding: 0;
+    }
+    .feedback p {
+        font-size: 14px;
+        line-height: 22.5px;
+        margin: 0;
+    }
+    .contacts_footer {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+    .contacts_footer .vertical_line {
+        transform: rotate(90deg);
+    }
+    .table_location td {
+        font-size: 14px;
+        padding: 2px 15px;
+    }
+}
+@media (max-width: 374px) {
+    .table_location td {
+        font-size: 12px;
+        padding: 2px 10px;
+    }
+}
