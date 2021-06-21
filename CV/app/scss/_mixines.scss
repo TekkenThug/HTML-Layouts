@@ -1,0 +1,11 @@
+@mixin titleFont {
+   font-family: "Oswald", sans-serif;
+}
+
+@mixin textFont {
+   font-family: "Open Sans", sans-serif;
+}
+
+@mixin trans(){
+   transition: all .2s ease-out;
+}
