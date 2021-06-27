@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Condensed');
+body{
+	background-image: url(../img/tonnel.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+header{
+	font-family: 'Nunito';
+	font-size: 350%;
+	color:#06a39b;
+	text-align: center;
+
+}
+
+ul{
+	text-align: center;
+}

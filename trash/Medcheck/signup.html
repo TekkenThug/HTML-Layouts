@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Medcheck</title>
+	<link rel="stylesheet" type="text/css" href="./css/signup.css">
+</head>
+<body>
+	<header>
+		<h1>MEDCHECK</h1>
+	</header>
+	<div>
+		<form name="login" action="" method="POST">
+			<input class="pole" type="text" name="login" placeholder="Логин" value=<?php echo $_POST['login']; ?>>
+			<p></p>
+			<input class="pole" type="email" name="email" placeholder="Эл.почта" value=<?php echo $_POST['email']; ?>>
+			<p></p>
+			<input class="pole" type="password" name="password" placeholder="Пароль">
+			<p></p>
+			<input class="pole" type="password" name="password_2" placeholder="Повторите пароль">
+			<p></p>
+			<input class="button" type="submit" name="do_signup" value="готово">
+		</form>
+	</div>
+
+</body>
+</html>
