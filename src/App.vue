@@ -135,6 +135,31 @@ const projects = ref<Project[]>([
     link: "projects/pravdom/index.html",
     image: "/img/thumb/logotype.png",
     tags: ["html", "css", "js", "jquery"],
+  },
+  {
+    link: "projects/wooder/index.html",
+    image: "/img/thumb/logotype.png",
+    tags: ["html", "css", "js", "jquery", "sass"],
+  },
+  {
+    link: "projects/erp/index.html",
+    image: "/img/thumb/logotype.png",
+    tags: ["html", "css", "js", "jquery", "sass"],
+  },
+  {
+    link: "projects/go-surf/index.html",
+    image: "/img/thumb/logotype.png",
+    tags: ["html", "css", "js", "jquery", "sass"],
+  },
+  {
+    link: "projects/interface/index.html",
+    image: "/img/thumb/logotype.png",
+    tags: ["html", "css", "js", "jquery", "sass"],
+  },
+  {
+    link: "projects/martin/index.html",
+    image: "/img/thumb/logotype.png",
+    tags: ["html", "css", "js", "jquery", "sass"],
   }
 ]);
 const filteredProjects = computed(() => {
