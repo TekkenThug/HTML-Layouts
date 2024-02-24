@@ -70,6 +70,18 @@ const techItems = ref<Tech[]>([
     title: "JavaScript",
   },
   {
+    id: "ts",
+    title: "TypeScript",
+  },
+  {
+    id: "react",
+    title: "React",
+  },
+  {
+    id: "vue",
+    title: "Vue",
+  },
+  {
     id: "jquery",
     title: "jQuery",
   },
@@ -80,6 +92,10 @@ const techItems = ref<Tech[]>([
   {
     id: "php",
     title: "PHP",
+  },
+  {
+    id: "laravel",
+    title: "Laravel",
   },
   {
     id: "mysql",
