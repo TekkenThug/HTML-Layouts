@@ -169,6 +169,7 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+   gap: 35px 15px;
 }
 
 .tech__item {
@@ -183,12 +184,17 @@
    @include trans();
    position: relative;
    cursor: pointer;
-   margin: 0 15px 10px;
+   user-select: none;
    
    &:hover {
       border-color: #8E7C93;
       box-shadow: 5px 5px 18px -5px rgba(0,0,0,0.75);
       transform: translate(-5px, -5px);
+
+      .tech__item-title {
+         opacity: 1;
+         transform: translateY(25px);
+      }
    }
    &.active:hover {
       border-color: #DCC48E;
@@ -201,6 +207,11 @@
       img {
          filter: invert(0);
       }
+
+      .tech__item-title {
+         opacity: 1;
+         transform: translateY(25px);
+      }
    }
 
    img {
@@ -208,6 +219,16 @@
       width: 100%;
       filter: invert(0.8);
    }
+}
+
+.tech__item-title {
+   @include trans();
+
+   position: absolute;
+   bottom: -5px;
+   font-size: 12px;
+   font-weight: 600;
+   opacity: 0;
 }
 
 // Projects

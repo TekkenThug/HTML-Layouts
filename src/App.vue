@@ -256,6 +256,8 @@ const filteredProjects = computed(() => {
                 data-aos="fade"
                 :data-aos-delay="(index + 1) * 150"
               >
+
+              <span class="tech__item-title">{{ tech.title }}</span>
             </li>
          </ul>
       </div>
