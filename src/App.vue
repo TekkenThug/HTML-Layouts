@@ -52,7 +52,7 @@ onMounted(() => {
   setupScrollAnimation();
 });
 
-type Tech = { id: string; title: string; image: string };
+type Tech = { id: string; title: string;};
 type Project = { link?: string; image: string; tags: string[] };
 
 const activeTech = ref<Tech | null>(null);
@@ -60,12 +60,10 @@ const techItems = ref<Tech[]>([
   {
     id: "html",
     title: "HTML5",
-    image: "/img/tech-icons/html5.svg"
   },
   {
     id: "css",
     title: "CSS3",
-    image: "/img/tech-icons/css.svg",
   },
   {
     id: "js",
@@ -74,22 +72,18 @@ const techItems = ref<Tech[]>([
   {
     id: "jquery",
     title: "jQuery",
-    image: "/img/tech-icons/jquery-2.svg",
   },
   {
     id: "sass",
     title: "Sass",
-    image: "/img/tech-icons/sass-1.svg",
   },
   {
     id: "php",
     title: "PHP",
-    image: "/img/tech-icons/php-1.svg",
   },
   {
     id: "mysql",
     title: "MySQL",
-    image: "/img/tech-icons/mysql-6.svg",
   },
 ]);
 const setActiveTech = (id: string) => {
