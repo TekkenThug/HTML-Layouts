@@ -9,18 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "normalize.css": "^8.0.1",
-    "swiper": "^11.0.6",
     "vue": "^3.4.19"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.7",
     "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.71.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.4",
     "vite-tsconfig-paths": "^4.3.1",
-    "vue-tsc": "^1.8.27",
-    "sass": "^1.71.1"
+    "vue-tsc": "^2.2.0"
   }
 }

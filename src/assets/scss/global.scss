@@ -45,8 +45,9 @@ h1 {
    line-height: 60px;
 }
 
-section, footer {
-   padding: 60px 120px;
+header, section, footer {
+   padding: 10px;
+   min-height: 100dvh;
 }
 
 p {
