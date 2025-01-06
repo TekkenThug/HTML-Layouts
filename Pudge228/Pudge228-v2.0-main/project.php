@@ -1,6 +1,6 @@
-<? require("pages/meta.php") ?>
+<?php require("pages/meta.php") ?>
 <body class="" onclick>
-<? require("pages/header.php") ?>
+<?php require("pages/header.php") ?>
 
 <main class="get_agent_container">
 	<div class="carousel_wrapper hidden">
@@ -124,7 +124,7 @@
 	</div>
 </main>
 
-<? require("pages/footer.php") ?>
+<?php require("pages/footer.php") ?>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/owlCarousel.js"></script>
 <script src="js/ajax.js"></script>
