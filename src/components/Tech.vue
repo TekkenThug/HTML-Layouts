@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section :class="$style.tech">
         <div class="container">
             <div class="heading">
                 <h2 class="title">Стек технологий</h2>
@@ -31,6 +31,13 @@ const activeTech = defineModel<TechItem | null>();
 </script>
 
 <style lang="scss" module>
+.tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .list {
     display: flex;
     justify-content: center;

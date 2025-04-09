@@ -60,6 +60,7 @@ const filteredProjects = computed(() => {
 
 .item {
     @include trans();
+    position: relative;
 
     a {
         display: block;
@@ -90,8 +91,6 @@ const filteredProjects = computed(() => {
         &:hover {
             background-color: #DCC48E;
             color: #1E1E24;
-            border-radius: 5px;
-            transform: translate(-5px, -5px);
             box-shadow: 5px 5px 18px -5px rgba(0, 0, 0, 0.75);
 
             img {

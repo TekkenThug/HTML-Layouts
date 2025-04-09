@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer :class="$style.footer">
         <div class="container">
             <div class="heading">
                 <h2 class="title">Контакты</h2>
@@ -53,6 +53,13 @@ const contactItems = [
 </script>
 
 <style lang="scss" module>
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .list {
     display: flex;
     justify-content: center;

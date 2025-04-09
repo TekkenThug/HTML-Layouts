@@ -1,13 +1,15 @@
 <template>
-   <Header />
+  <main class="wall">
+    <Header class="panel" />
 
-   <About />
+    <About class="panel" />
 
-   <Tech v-model="activeTech" />
+    <Tech v-model="activeTech" class="panel" />
 
-   <Projects :active="activeTech" />
-   
-   <Footer />
+    <Projects :active="activeTech" class="panel" />
+
+    <Footer class="panel" />
+  </main>
 </template>
 
 <script setup lang="ts">
@@ -21,10 +23,22 @@ import Footer from "./components/Footer.vue";
 
 import "@/assets/scss/global.scss";
 
-const activeTech = ref<TechItem | null>(null)
+const activeTech = ref<TechItem | null>(null);
 </script>
 
 <style scoped>
+.panel {
+    scroll-snap-align: start;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.wall {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
 .list-move,
 .list-enter-active,
 .list-leave-active {

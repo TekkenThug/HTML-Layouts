@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section :class="$style.about">
         <div class="container">
             <div class="heading">
                 <h2 class="title">О себе</h2>
@@ -49,6 +49,13 @@
 </template>
 
 <style lang="scss" module>
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .list {
     display: grid;
     gap: 15px;
